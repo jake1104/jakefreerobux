@@ -1,4 +1,8 @@
-body{text-align: center; display: flex;}
+body{
+  display:table;
+  table-layout:fixed;
+  text-align:center;
+}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 *{
   margin: 0;
